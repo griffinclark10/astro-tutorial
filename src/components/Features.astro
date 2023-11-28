@@ -19,7 +19,10 @@ const featuresData = [
 <section class="features">
     <div class="container">
       {featuresData.map(feature => (
-        <Card dark={true} title={feature.title} description={feature.description} />
+        <Card dark={true} >
+          <h3>{feature.title}</h3>
+          <p>{feature.description}</p>
+          </Card>
       ))}
     </div>
 </section>
